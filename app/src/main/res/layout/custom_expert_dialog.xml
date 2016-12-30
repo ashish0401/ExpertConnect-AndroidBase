@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/imgcancel"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/padding_10"
+        android:src="@drawable/cross_btn"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/padding_25"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_experttext"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_18"
+            android:text="@string/expertlevel"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/padding_30"
+            android:id="@+id/tv_expertlevel"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/white"
+            android:background="@color/login_orange"
+            android:layout_alignParentRight="true"
+            android:text="@string/beginner"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.appyvet.rangebar.RangeBar
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangebar_expert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/padding_15"
+        custom:connectingLineColor="@color/login_orange"
+        custom:rangeBar="false"
+        custom:tickHeight="3dp"
+        custom:pinColor="@color/white"
+        custom:rangeBarColor="@color/login_orange"
+        custom:tickColor="@color/login_orange"
+        custom:tickEnd="3"
+        custom:tickInterval="1"
+        custom:tickStart="1" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:layout_marginLeft="@dimen/padding_25"
+        android:id="@+id/btn_expert_submit"
+        android:layout_marginRight="@dimen/padding_25"
+        android:layout_marginTop="@dimen/padding_20"
+        android:background="@color/login_orange"
+        android:layout_marginBottom="50dp"
+        android:text="@string/submit"/>
+</LinearLayout>

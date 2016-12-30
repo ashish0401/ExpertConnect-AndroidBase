@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="0dip"
+    android:background="@drawable/progress_dialog_style"
+    android:orientation="vertical"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip"
+    android:layout_gravity="center">
+
+    
+    <!-- <TextView
+        android:id="@+id/OkButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Tap to Cancel"
+        android:textColor="@drawable/progress_cancel_style"
+        android:textSize="17dp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/OkButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Tap to Cancel"
+        android:textColor="@drawable/progress_cancel_style"
+        android:textSize="17dp" >
+    </TextView>-->
+    
+  
+
+    <ProgressBar
+        android:gravity="center"
+        android:id="@+id/ldProgressBar1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+        android:visibility="visible" >
+    </ProgressBar>
+
+   <!-- <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldProgressBar1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+      	android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@drawable/progress_dialog_download_message_style"
+        android:textSize="16sp" >
+    </TextView>
+    
+     <TextView
+        android:id="@+id/dialogMessage2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldProgressBar1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+      	android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@drawable/progress_dialog_download_message_style"
+        android:textSize="16sp" >
+    </TextView>
+    
+     <TextView
+        android:id="@+id/dialogMessage3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldProgressBar1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+      	android:paddingBottom="10dp"
+        android:text=""
+        android:textColor="@drawable/progress_dialog_download_message_style"
+        android:visibility="invisible"
+        android:textSize="16sp" >
+    </TextView>-->
+
+    <!--
+    <ImageView
+        android:id="@+id/ugLowerLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="6dp"
+        android:background="#c8c8c8" />
+
+
+
+
+    -->
+
+
+    <!--
+    <TextView
+        android:id="@+id/OkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ugLowerLine"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Tap to Cancel"
+        android:textColor="@drawable/progress_cancel_style"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    -->
+
+</RelativeLayout>

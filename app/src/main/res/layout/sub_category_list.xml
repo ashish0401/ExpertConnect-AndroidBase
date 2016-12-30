@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_rvmain"
+    android:paddingLeft="@dimen/padding_15"
+    android:paddingRight="@dimen/padding_15"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_border"
+        android:gravity="center"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_sublist"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_20"
+            android:text="@string/sub_section"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

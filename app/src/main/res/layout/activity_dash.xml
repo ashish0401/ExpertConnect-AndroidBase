@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_dash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_marginTop="@dimen/padding_5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/home_selected_btn"
+            android:id="@+id/img_home"
+            android:layout_weight="1"
+            style="@style/BottomNavigationBarButton" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_assignment"
+            android:layout_height="40dp"
+            android:src="@drawable/myassignment_unselected_btn"
+            android:layout_weight="1"
+            style="@style/BottomNavigationBarButton"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/browse_enquiry_unselected_btn"
+            android:id="@+id/img_enquiry"
+            android:layout_weight="1"
+            style="@style/BottomNavigationBarButton"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/browse_experts_unselected_btn"
+            android:id="@+id/img_expert"
+            android:layout_weight="1"
+            style="@style/BottomNavigationBarButton"/>
+    </LinearLayout>
+   </LinearLayout>
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.expertconnect.app.fragments.FragmentDrawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_gravity="left"
+        android:layout_height="match_parent"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>

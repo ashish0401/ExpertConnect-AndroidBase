@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context="com.expertconnect.app.fragments.Home">
+    <LinearLayout
+       android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/home_toolbar" />
+
+           <AutoCompleteTextView
+               android:id="@+id/ac_search"
+               android:singleLine="true"
+               android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/padding_15"
+            android:drawableLeft="@drawable/search_icon"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_15"
+            android:drawablePadding="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_15"
+            android:background="@drawable/delete_background"
+            android:layout_height="50dp" />
+
+        <GridView
+            android:id="@+id/grid_main"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1px"
+            android:layout_marginRight="-1px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/padding_8"
+    android:paddingLeft="@dimen/padding_15"
+    android:paddingRight="@dimen/padding_15"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/delete_background"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/padding_5"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_profile_image"
+                android:layout_marginRight="@dimen/padding_20"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/default_profile_img"
+                app:civ_border_color="#FF000000" />
+
+            <TextView
+                android:id="@+id/tv_requirement"
+                android:layout_marginTop="@dimen/padding_10"
+                android:lineSpacingExtra="3dp"
+                android:layout_toRightOf="@+id/img_profile_image"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_20"
+                android:text="xzcxzcsdbfsdbfbsdfbdbsfbdsfb"
+                android:layout_height="wrap_content" />
+
+
+                <RatingBar
+                    android:id="@+id/listitemrating"
+                    android:progressDrawable="@drawable/rating_selector"
+                    android:isIndicator="true"
+                    android:layout_marginTop="@dimen/padding_8"
+                    android:layout_below="@+id/tv_requirement"
+                    android:layout_marginLeft="60dp"
+                    android:numStars="5"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:gravity="center"
+                    android:rating="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_subcat"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18"
+            android:text="@string/salsa"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_expert_location"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/text_18"
+                android:text="@string/location1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:text="@string/Melbourn"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_coaching"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/text_18"
+                android:text="@string/coaching1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_preference"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginLeft="@dimen/padding_8"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18"
+                android:text="@string/home"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_request"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/padding_15"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/request_gray"
+            android:singleLine="true"
+            android:text="@string/request" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_accepted_rejected"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/padding_15"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/request_gray"
+            android:singleLine="true"
+            android:text="@string/accept" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_joinbuttons"
+            android:layout_marginTop="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_20"
+            android:layout_marginRight="@dimen/padding_20"
+            android:layout_marginBottom="@dimen/padding_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_accept"
+                android:layout_width="0dp"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/login_orange"
+                android:singleLine="true"
+                android:text="@string/accept" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_reject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/login_orange"
+                android:singleLine="true"
+                android:text="@string/reject" />
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

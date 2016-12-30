@@ -1,0 +1,50 @@
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.expertconnect.app.fragments.MyAssignment">-->
+
+<!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:text="Assign"-->
+    <!--android:layout_height="wrap_content" />-->
+
+<!--</FrameLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/credits_gray"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.expertconnect.app.fragments.BrowseEnquiry">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/delete_background"
+        android:padding="@dimen/padding_15"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/login_orange"
+            android:layout_centerHorizontal="true"
+            android:text="@string/myassignment"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_browse_expert"
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+

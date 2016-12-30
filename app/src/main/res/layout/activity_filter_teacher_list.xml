@@ -1,0 +1,164 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/credits_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/delete_background"
+        android:padding="@dimen/padding_15"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="@dimen/padding_30"
+            android:id="@+id/back"
+            android:src="@drawable/back_btn"
+            android:layout_height="@dimen/padding_30" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/login_orange"
+            android:layout_centerHorizontal="true"
+            android:text="@string/filters"
+            android:layout_height="wrap_content" />
+
+       <View
+           android:layout_width="1dp"
+           android:background="@color/login_orange"
+           android:layout_marginRight="@dimen/padding_10"
+           android:layout_toLeftOf="@+id/tv_clear"
+           android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/login_orange"
+            android:layout_alignParentRight="true"
+            android:text="@string/clear"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/padding_8"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_25"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+        <CheckBox
+            android:id="@+id/institute"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_25"
+            android:layout_height="wrap_content"
+            android:text="@string/institute" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/padding_25"
+                android:layout_height="wrap_content"
+                android:text="@string/travel" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_km"
+                android:text="@string/fifty"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/padding_25"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/padding_20"
+                android:paddingRight="@dimen/padding_20"
+                android:background="@color/login_orange"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.appyvet.rangebar.RangeBar
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            custom:connectingLineColor="@color/edit_gray"
+            custom:rangeBar="false"
+            custom:tickHeight="3dp"
+            custom:pinColor="@color/white"
+            custom:rangeBarColor="@color/login_orange"
+            custom:tickColor="@color/login_orange"
+            custom:tickEnd="5"
+            custom:tickInterval="1"
+            custom:tickStart="1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+        <CheckBox
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_25"
+            android:layout_height="wrap_content"
+            android:text="@string/other" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+        <CheckBox
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/padding_25"
+            android:layout_height="wrap_content"
+            android:text="@string/online" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_5"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:text="@string/apply"
+            android:layout_marginTop="@dimen/padding_15"
+            android:id="@+id/apply"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@color/login_orange"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/backs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/tvfortooltitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="Back"
+            android:textColor="@color/login_orange"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

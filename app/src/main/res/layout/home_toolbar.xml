@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/delete_background"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/side_menu"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:text="@string/expertconnect"
+            android:layout_centerVertical="true"
+            android:textColor="@color/login_orange"
+            android:textSize="@dimen/text_20"/>
+
+        <ImageView
+            android:id="@+id/imgpromotion"
+            android:layout_width="25dp"
+            android:layout_marginRight="@dimen/padding_15"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/imgnotification"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/promotion_btn"
+            />
+
+        <ImageView
+            android:id="@+id/imgnotification"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/padding_15"
+            android:layout_alignParentRight="true"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/notification_btn"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

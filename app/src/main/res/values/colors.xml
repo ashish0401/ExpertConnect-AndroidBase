@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#f25a0b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_orange">#f25a0b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#010101</color>
+    <color name="edit_gray">#808080</color>
+    <color name="transparent">?android:attr/selectableItemBackground</color>
+    <color name="colorBottomNavigationButton">#7F7F7F</color>
+    <color name="trans_orange">#D9f2651c</color>
+    <color name="super_dark_grey">#878786</color>
+    <color name="dark_grey">#525252</color>
+    <color name="light_gray">#a7a7a7</color>
+    <color name="dark_gray">#eeeeee</color>
+    <color name="credits_gray">#f6f6f6</color>
+    <color name="request_gray">#898989</color>
+</resources>

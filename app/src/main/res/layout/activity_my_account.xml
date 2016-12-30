@@ -1,0 +1,210 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/credits_gray"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.expertconnect.app.fragments.BrowseEnquiry">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/delete_background"
+        android:padding="@dimen/padding_15"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="@dimen/padding_30"
+            android:id="@+id/back"
+            android:src="@drawable/back_btn"
+            android:layout_height="@dimen/padding_30" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/login_orange"
+            android:layout_centerHorizontal="true"
+            android:text="@string/myaccount"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btn_bankdetails"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expert_selected"
+            android:singleLine="true"
+            android:text="@string/bankdetails"
+
+            />
+
+        <Button
+            android:textColor="@color/black"
+            android:id="@+id/btn_ecredits"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/expert_unselected"
+            android:singleLine="true"
+            android:text="@string/ecredits"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ecredits"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:padding="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@drawable/delete_background"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_toatalcredits"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_18"
+                android:textColor="@color/black"
+                android:text="@string/totalecredits"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_rate"
+                android:layout_marginRight="@dimen/padding_5"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/padding_40"
+                android:background="@drawable/border_bg"
+                android:hint="@string/five"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="160dp"
+            android:text="@string/add"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_20"
+            android:textSize="@dimen/text_18"
+            android:id="@+id/btn_add"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@color/login_orange"
+            android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bank"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:padding="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@drawable/delete_background"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:id="@+id/spin_bankname"
+            android:layout_width="match_parent"
+            android:prompt="@string/maincategory"
+            android:background="@drawable/spinner_custom"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:id="@+id/et_acc_no"
+            android:paddingLeft="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_15"
+            android:background="@drawable/border_black"
+            android:hint="@string/acno"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:id="@+id/et_bsb"
+            android:paddingLeft="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_15"
+            android:background="@drawable/border_black"
+            android:hint="@string/branch"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/padding_15"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:src="@drawable/calender_icon"
+                android:layout_marginTop="@dimen/padding_15"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_width="@dimen/padding_40"
+                android:layout_height="@dimen/padding_40" />
+            <EditText
+                android:id="@+id/et_expiry"
+                android:paddingLeft="@dimen/padding_10"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/padding_15"
+                android:background="@drawable/border_black"
+                android:hint="@string/expiry"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_cvv"
+            android:paddingLeft="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_15"
+            android:background="@drawable/border_black"
+            android:hint="@string/cvv"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:text="@string/submit"
+            android:layout_marginBottom="@dimen/padding_5"
+            android:layout_marginTop="@dimen/padding_15"
+            android:textSize="@dimen/text_18"
+            android:id="@+id/btn_submit"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@color/login_orange"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

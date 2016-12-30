@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">Expert Connect</string>
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="Login">LOG IN</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="signup">SIGN UP</string>
+    <string name="loginwith">Login with</string>
+    <string name="signupas">SIGNUP AS</string>
+    <string name="asteacher">AS A TEACHER</string>
+    <string name="asstudent">AS A STUDENT</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="next">NEXT</string>
+    <string name="country_prompt">+61</string>
+    <string name="maincategory">Main Category</string>
+    <string name="phone">Mobile No</string>
+    <string name="location">Location</string>
+    <string name="enterotp">Please enter OTP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="expertDetails">Expert Details</string>
+    <string name="expertlevel">Expert Level</string>
+    <string name="intermediate">INTERMEDIATE</string>
+    <string name="beginner">Beginner</string>
+    <string name="aus700">AU$ 0</string>
+    <string name="hours">Hours</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="advance">Advance</string>
+    <string name="write">Write about yourself...</string>
+    <string name="inter">Intermediate</string>
+    <string name="addecredits">Add E Credits</string>
+    <string name="entery20">Entry 20 $ with 50 E Credit \n Valid till X days</string>
+    <string name="skip">SKIP</string>
+    <string name="coaching">Coaching Details</string>
+    <string name="teachercoach">Preferably where teacher would like to coach</string>
+    <string name="home">Home</string>
+    <string name="institute">Institute or Coaching Class</string>
+    <string name="travel">Travel(Km)</string>
+    <string name="fifty">10</string>
+    <string name="other">Other-Library,Community \n Centre etc.</string>
+    <string name="online">Online-Skype, Messanger etc</string>
+    <string name="agree"><u><![CDATA[I agree the Terms & Conditions]]></u></string>
+    <string name="join">JOIN EXPERT CONNECT</string>
+    <string name="facebook_app_id">1814196302192436</string>
+    <string name="expertconnect">Expert Connect</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="teacher">Teacher</string>
+    <string name="expertlogo">EXPERT</string>
+    <string name="expertlogo1">CONNECT</string>
+    <string name="search">Search</string>
+    <string name="error_went">Something Went Wrong</string>
+    <string name="qualification">Qualification (Optional)</string>
+    <string name="Lectures">Lectures</string>
+    <string name="sub_section">Dance</string>
+    <string name="something">Something Went Wrong</string>
+    <string name="pleasechecklogin">Please Check your Credentials</string>
+    <string name="error">Error</string>
+    <string name="selectexperlevel">Fill All Expert Level Details</string>
+    <string name="rate">Please Enter Rate</string>
+    <string name="selecworking">Please Select Working Type</string>
+    <string name="lecture">Please Enter No of Lecture</string>
+    <string name="selectmain">Select Main Category</string>
+    <string name="selectsub">Select Sub Category</string>
+    <string name="about">Please Enter About Yourself</string>
+    <string name="nointernet">No Internet Connection</string>
+    <string name="studentcoach">Preferably where students want to be coached</string>
+    <string name="pleaseenteremail">Please Enter your registered Email</string>
+    <string name="sendemail">Send Email</string>
+    <string name="verification">Login Credentials mailed to your Email Address</string>
+    <string name="browseenquiry">Browse Enquiry</string>
+    <string name="requierment">Requirement</string>
+    <string name="salsa">Salsa</string>
+    <string name="location1">Location :</string>
+    <string name="Melbourn">Melbourne</string>
+    <string name="coaching1">Coaching :</string>
+    <string name="sendoffer">Send Offer</string>
+    <string name="browsexpert">Browse Expert</string>
+    <string name="expertise">Expertise :</string>
+    <string name="fee">Fee :</string>
+    <string name="dollar">100$</string>
+    <string name="request">REQUEST</string>
+    <string name="experts">Experts</string>
+    <string name="expertswho">My History</string>
+    <string name="amount">Amount</string>
+    <string name="send">SEND</string>
+    <string name="teacherlist">Teacher List</string>
+    <string name="clear">Clear</string>
+    <string name="apply">APPLY</string>
+    <string name="filters">FILTERS</string>
+    <string name="already">You have already sent request to this teacher</string>
+    <string name="requestsucess">Your request has been sent successfully.</string>
+    <string name="reject">Reject</string>
+    <string name="inprogress">IN PROGRESS</string>
+    <string name="subject">Subject :</string>
+    <string name="contact">Contact no :</string>
+    <string name="number">+61 699345654</string>
+    <string name="complete">COMPLETE</string>
+    <string name="myassignment">My Assignment</string>
+    <string name="received">Received</string>
+    <string name="sent">Sent</string>
+    <string name="notification">Notification</string>
+    <string name="myaccount">My Account</string>
+    <string name="bankdetails">Bank Details</string>
+    <string name="ecredits">E Credits</string>
+    <string name="acno">A/c No</string>
+    <string name="branch">Branch (BSB Code)</string>
+    <string name="expiry">Card Expiry</string>
+    <string name="cvv">CVV</string>
+    <string name="totalecredits">Total E Credits left</string>
+    <string name="five">05</string>
+    <string name="add">ADD</string>
+    <string name="alreadyaccept">You have already Accepted this request</string>
+    <string name="yourcharge">Your Charges(Per Lecture)</string>
+    <string name="nooflec">Number of lectures required</string>
+    <string name="level">Level</string>
+    <string name="totalprice">Total price</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yourCharge">Please Enter Your Charges</string>
+    <string name="begin">Please enter Beginner Lectures Required</string>
+    <string name="interr">Please enter Intermediate Lectures Required</string>
+    <string name="advanced">Please enter Advance Lectures Required</string>
+    <string name="firstnameerror">Please Enter First Name</string>
+    <string name="lastnameerror">Please Enter Last Name</string>
+    <string name="emailerror">Please Enter Email</string>
+    <string name="validemail">Please Enter Valid Email</string>
+    <string name="passwordminimum">Password should be minimum 6 characters</string>
+    <string name="countrycodeerror">Please Select Country Code</string>
+    <string name="mobileerror">Please Enter Mobile No</string>
+    <string name="mobilemin">Mobile No should be minimum 9 digits</string>
+    <string name="doberror">Please Select DOB</string>
+    <string name="gendererror">Please Select Gender</string>
+    <string name="locationerror">Please Select location</string>
+    <string name="passworderror">Please Enter Password</string>
+    <string name="termserror"><![CDATA[Please Accept Terms & Condition]]></string>
+    <string name="atleastone">Please Select Atleast One Option</string>
+    <string name="alreadyrejected">You have already Rejected this request</string>
+    <string name="requestcancel">Request Canceled</string>
+    <string name="otperror">Please Check your OTP</string>
+    <string name="photoerror">Unable to add photo</string>
+    <string name="confirm">Confirm</string>
+    <string name="perlecture">/lecture</string>
+    <string name="yourCharge0">Your Charges Cannot be Zero</string>
+    <string name="begin0">Beginner Lectures Cannot be Zero</string>
+    <string name="inter0">Intermediate Lectures Cannot be Zero</string>
+    <string name="advance0">Advance Lectures Cannot be Zero</string>
+    <string name="noresultsfound">No Results Found</string>
+    <string name="youracceptrequest">Accept Request Sent Successfully</string>
+    <string name="yourrejectrequest">Reject Request Sent Successfully</string>
+    <string name="yourconfirmrequest">Confirm Request Sent Successfullyl</string>
+
+
+    <string-array name="country_codes">
+        <item>+61</item>
+        <item>+71</item>
+        <item>+81</item>
+        <item>+91</item>
+        <item>+21</item>
+        <item>+41</item>
+
+    </string-array>
+
+    <string-array name="main_category">
+        <item>Main Category</item>
+        <item>Dance</item>
+        <item>Sports</item>
+        <item>Music</item>
+        <item>Languages</item>
+    </string-array>
+    <string-array name="sub_category">
+        <item>Sub Category</item>
+        <item>Salsa</item>
+        <item>Zumba</item>
+        <item>Hip Hop</item>
+        <item>Contemporary</item>
+
+    </string-array>
+    <string-array name="qualification">
+        <item>Qualification</item>
+        <item>BA</item>
+        <item>MA</item>
+        <item>BE</item>
+        <item>ME</item>
+        <item>MBA</item>
+    </string-array>
+
+    <string-array name="wages">
+        <item>Working Type</item>
+        <item>Hours</item>
+        <item>Weeks</item>
+        <item>Months</item>
+
+
+    </string-array>
+
+    <string-array name="nav_drawer_labels">
+        <item>Notification</item>
+        <item>My Category</item>
+        <item>Refer Friend</item>
+        <item>Manage Expertise</item>
+        <item>My Account</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="nav_drawer_images">
+        <item>@drawable/notification_icon</item>
+        <item>@drawable/my_category_icon</item>
+        <item>@drawable/refer_friend_icon</item>
+        <item>@drawable/manage_expertise_icon</item>
+        <item>@drawable/my_account_icon</item>
+        <item>@drawable/setting_icon</item>
+        <item>@drawable/logout_icon</item>
+    </string-array>
+
+
+</resources>

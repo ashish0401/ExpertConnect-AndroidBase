@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@color/trans_orange">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/padding_35"
+            android:id="@+id/img_user_id"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/default_profile_img"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/padding_15"
+            android:layout_marginLeft="@dimen/padding_35"
+            android:text="@string/teacher"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/white"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="@dimen/padding_10"
+         />
+
+</RelativeLayout>

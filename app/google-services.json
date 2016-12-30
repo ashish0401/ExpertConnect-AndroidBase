@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "547107887161",
+    "firebase_url": "https://expert-connect-8b038.firebaseio.com",
+    "project_id": "expert-connect-8b038",
+    "storage_bucket": "expert-connect-8b038.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547107887161:android:8d0922c124174027",
+        "android_client_info": {
+          "package_name": "com.expertconnect.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547107887161-va4j6pocb474ptjj2f7886odk640nq4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnQKEg8cxf99jKVEaxe66-gHrpqyHsiZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

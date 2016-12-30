@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/imgcancel"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/padding_10"
+        android:src="@drawable/cross_btn"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_requestsucess"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:text="@string/requestsucess"
+        android:textSize="@dimen/text_20"
+        android:layout_marginTop="@dimen/padding_25"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

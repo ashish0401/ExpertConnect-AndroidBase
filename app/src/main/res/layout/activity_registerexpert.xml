@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_checkout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.expertconnect.app.activities.RegisterExpertDetails">
+
+    <LinearLayout
+        android:id="@+id/expert_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_15"
+        android:paddingRight="@dimen/padding_15"
+        android:paddingTop="@dimen/padding_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/padding_30"
+                android:layout_height="@dimen/padding_30"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/tv_expertdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/expertDetails"
+                android:textColor="@color/login_orange"
+                android:textSize="@dimen/text_25" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_10"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spin_main"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_custom"
+                android:prompt="@string/maincategory" />
+
+            <Spinner
+                android:id="@+id/spin_sub"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/padding_15"
+                android:background="@drawable/spinner_custom"
+                android:prompt="@string/maincategory" />
+
+            <EditText
+                android:id="@+id/et_qualification"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:maxLength="50"
+                android:imeOptions="actionDone"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/padding_15"
+                android:background="@drawable/border_black"
+                android:hint="@string/qualification"
+                android:paddingLeft="@dimen/padding_10" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_15">
+
+                <LinearLayout
+                    android:background="@color/credits_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_15">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_experttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expertlevel"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_20" />
+
+                        <TextView
+                            android:id="@+id/tv_expertlevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/tv_experttext"
+                            android:layout_marginTop="@dimen/padding_10"
+                            android:background="@color/login_orange"
+                            android:padding="5dp"
+                            android:text="@string/beginner"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_18" />
+                    </RelativeLayout>
+
+
+                    <com.appyvet.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/rangebar"
+                        android:layout_marginTop="@dimen/padding_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        custom:connectingLineColor="@color/login_orange"
+                        custom:pinColor="@color/white"
+                        custom:rangeBar="false"
+                        custom:rangeBarColor="@color/login_orange"
+                        custom:tickColor="@color/login_orange"
+                        custom:tickEnd="3"
+                        custom:tickHeight="3dp"
+                        custom:tickInterval="1"
+                        custom:tickStart="1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_yourcharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_8"
+                            android:text="@string/yourcharge"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_18" />
+
+                        <EditText
+                            android:id="@+id/et_charge"
+                            android:imeOptions="actionDone"
+                            android:maxLength="4"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/padding_15"
+                            android:layout_toRightOf="@+id/tv_yourcharge"
+                            android:background="@drawable/border_black"
+                            android:hint="@string/aus700"
+                            android:inputType="number"
+                            android:paddingLeft="@dimen/padding_10"
+                            android:singleLine="true"
+                            android:textSize="17sp" />
+
+
+
+                       </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:background="@color/black"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_lecreq"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_15"
+                        android:text="@string/nooflec"
+                        android:textSize="@dimen/text_20" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_begineer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_15"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_level"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/level"
+                                android:textSize="@dimen/text_18" />
+
+                            <TextView
+                                android:id="@+id/tv_lectures"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/Lectures"
+                                android:textSize="@dimen/text_18" />
+
+                            <TextView
+                                android:id="@+id/tv_totalprice"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="end"
+                                android:text="@string/totalprice"
+                                android:textSize="@dimen/text_18" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20">
+
+                            <TextView
+                                android:id="@+id/tv_beginner"
+                                android:textColor="@color/login_orange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/beginner"
+                                android:textSize="@dimen/text_17" />
+
+                            <EditText
+                                android:id="@+id/et_beginnerlec"
+                                android:maxLength="3"
+                                android:imeOptions="actionDone"
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:textSize="17sp"
+                                android:background="@drawable/border_bg"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/padding_8" />
+
+                            <TextView
+                                android:layout_marginRight="@dimen/padding_10"
+                                android:id="@+id/tv_beginner_price"
+                                android:textColor="@color/login_orange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/aus700"
+                                android:textSize="@dimen/text_18" />
+
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/padding_15"
+                            android:background="@color/black"
+                            android:layout_height="1dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20">
+
+                            <TextView
+                                android:id="@+id/tv_intermediate"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/inter"
+                                android:textSize="@dimen/text_17"/>
+
+                            <EditText
+                                android:id="@+id/et_interlec"
+                                android:maxLength="3"
+                                android:imeOptions="actionDone"
+                                android:layout_width="70dp"
+                                android:layout_height="40dp"
+                                android:textSize="17sp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/border_black"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/padding_8" />
+
+                            <TextView
+                                android:layout_marginRight="@dimen/padding_10"
+                                android:id="@+id/tv_intermediate_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/aus700"
+                                android:textSize="@dimen/text_18" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/padding_15"
+                            android:background="@color/black"
+                            android:layout_height="1dp"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_20">
+
+                            <TextView
+                                android:id="@+id/tv_advance"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/advance"
+                                android:textSize="@dimen/text_17" />
+
+                            <EditText
+                                android:id="@+id/et_advancelec"
+                                android:maxLength="3"
+                                android:imeOptions="actionDone"
+                                android:layout_width="70dp"
+                                android:textSize="17sp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/border_black"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/padding_8" />
+
+                            <TextView
+                                android:layout_marginRight="@dimen/padding_10"
+                                android:id="@+id/tv_advance_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/padding_8"
+                                android:text="@string/aus700"
+                                android:textSize="@dimen/text_18" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@color/edit_gray"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/padding_10">
+                <LinearLayout
+                    android:background="@color/credits_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_aboutyou"
+                        android:imeOptions="actionDone"
+                        android:maxLength="200"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/no_border"
+                        android:hint="@string/write"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="@dimen/padding_10" />
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnnext"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_15"
+                android:background="@color/login_orange"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray">
+
+        <LinearLayout
+
+            android:id="@+id/llForSearchLay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/profile_edit_back"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2.5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2.5dp"
+                android:background="@color/dark_gray" />
+
+
+            <FrameLayout
+                android:id="@+id/flForSearchLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/etForSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/edit_gray"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btnForClose"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flDefaultCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/ivflag5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="0.075"
+                android:background="@drawable/flag" />
+
+            <TextView
+                android:id="@+id/tvCountryName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:text="India" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvCountryLocalName"-->
+            <!--android:paddingLeft="7dp"-->
+            <!--android:text=""-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/tvCountryCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:text="+91" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/super_dark_grey"
+
+        />
+
+    <ListView
+        android:id="@+id/lvCountryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6"
+        android:divider="@color/white"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>
